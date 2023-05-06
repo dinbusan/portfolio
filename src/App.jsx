@@ -12,14 +12,11 @@ function App() {
   return (
     <>
       <Header className="relative flex items-center justify-center h-screen w-screen overflow-hidden" />
-      <video
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        autoPlay
-        loop
-        muted
-      >
-        <source src="assets/star_burst_2.mp4" type="video/mp4" />
-      </video>
+      <div className="absolute inset-0 overflow-hidden ">
+        <video className="h-full w-full object-cover" autoPlay loop muted>
+          <source src="assets/star_burst_2.mp4" type="video/mp4" />
+        </video>
+      </div>
       {/* <div className="h-screen bg-no-repeat bg-center bg-cover md:hidden">
         {" "}
         <img src="./public/assets/stars.jpg" alt="" />

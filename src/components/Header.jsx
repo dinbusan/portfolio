@@ -5,11 +5,13 @@ const Header = () => {
   return (
     <div className="">
       <nav className="flex relative z-30  text-2xl text-white bg-black bg-opacity-70">
-        <h1 className="text-sky-200 star-trek pl-10 pt-2 text-8xl">
-          DeannVidetto
-        </h1>
+        <Link to="/">
+          <h1 className="text-5xl tracking-wider star-trek pl-10 pt-2 md:text-8xl">
+            Deann&#x200a;Videtto
+          </h1>
+        </Link>
         <div className="ml-auto ">
-          <ul className="space-x-0 flex mx-0 text-amber-400 roddenberry">
+          <ul className="space-x-0 tracking-wider flex mx-0 text-amber-400 roddenberry">
             <Link to="/">
               <li className="nav-button hover:bg-amber-400">HOME</li>
             </Link>
