@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-button {
+    @apply hidden md:flex bg-transparent hover:text-white ease-in duration-200 py-10 px-4 border-blue-500 hover:border-transparent text-3xl;
+  }
+}
+
+@font-face {
+  font-family: "Startrekfuture";
+  src: url("/assets/fonts/star-trek-future-font/Startrekfuture-EK6e.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.star-trek {
+  font-family: "Startrekfuture", sans-serif;
+}
+
+@font-face {
+  font-family: "Roddenberry";
+  src: url("public/assets/fonts/roddenberry-font/Roddenberry-DgLm.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.roddenberry {
+  font-family: "Roddenberry", sans-serif;
+}
