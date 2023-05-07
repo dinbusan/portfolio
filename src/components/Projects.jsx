@@ -3,7 +3,7 @@ import React from "react";
 const Projects = () => {
   return (
     <div className="relative bg-black m-2 md:w-1/2 md:m-auto">
-      <h1 className="mt-5 text-white text-center tracking-wider roddenberry text-4xl">
+      <h1 className="mt-5  select-none	text-white text-center tracking-wider roddenberry text-4xl">
         WeatherWise
       </h1>
       <div className="max-w-100% h-auto mt-5 ">

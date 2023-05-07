@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="fixed inset-0 font-mono bg-black bg-opacity-70 flex justify-center pt-20 pb-5 md:pt-40">
+    <div className="fixed select-none	inset-0 font-mono bg-black bg-opacity-70 flex justify-center pt-20 pb-5 md:pt-40">
       <div className="flex max-h-750px overflow-y-auto justify-center">
         <p className="p-5 text-white text-xl w-7/8 md:w-3/4 ">
           Hi, my name is Deann and I am a web developer with USA and EU

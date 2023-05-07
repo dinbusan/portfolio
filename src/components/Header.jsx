@@ -29,13 +29,13 @@ const Header = () => {
               <li className="nav-button hover:bg-sky-400">ABOUT</li>
             </Link>
             <Link to="/skills">
-              <li className="nav-button hover:bg-amber-400">Skills</li>
+              <li className="nav-button hover:bg-rose-400">SKILLS</li>
             </Link>
             <Link to="/projects">
-              <li className="nav-button hover:bg-rose-400">PROJECTS</li>
+              <li className="nav-button hover:bg-indigo-400">PROJECTS</li>
             </Link>
             <Link to="/contact">
-              <li className="nav-button hover:bg-indigo-400">CONTACT</li>
+              <li className="nav-button hover:bg-amber-400">CONTACT</li>
             </Link>
           </ul>
           {/*hamburger*/}
