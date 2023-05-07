@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="">
         <div className="max-w-100% md:w-1/2 h-auto mt-5 mx-auto">
           <a href="https://weatherwise-543ec.web.app/">
-            <img src="./public/assets/weatherWise.png" alt="" />
+            <img src="./assets/weatherWise.png" alt="" />
           </a>
         </div>
         <div className="hidden md:block font-mono mx-10 mt-10 text-center justify-center ">
