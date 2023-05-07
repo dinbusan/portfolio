@@ -8,7 +8,7 @@ const Projects = () => {
           WeatherWise
         </h1>
         <div className="">
-          <div className="max-w-100% hover:scale-110 duration-300  md:w-1/2 h-auto mt-5 mx-auto">
+          <div className="max-w-100% hover:scale-105 duration-300  md:w-1/2 h-auto mt-5 mx-auto">
             <a href="https://weatherwise-543ec.web.app/">
               <img src="./assets/weatherWise.png" alt="" />
             </a>
@@ -29,7 +29,7 @@ const Projects = () => {
           DevHub
         </h1>
         <div className="">
-          <div className="max-w-100%  md:w-1/2 h-auto mt-5 mx-auto">
+          <div className="max-w-100% hover:scale-105 duration-300 md:w-1/2 h-auto mt-5 mx-auto">
             <a href="https://github.com/dinbusan/dev-hub">
               <img src="./assets/devhub.png" alt="" />
             </a>
