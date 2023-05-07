@@ -31,3 +31,9 @@
 .roddenberry {
   font-family: "Roddenberry", sans-serif;
 }
+
+.projects-container {
+  position: relative;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+}
