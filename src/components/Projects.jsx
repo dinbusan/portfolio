@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div className="projects-container relative bg-black bg-opacity-60 m-2 lg:w-1/2 md:m-auto">
       <div className="">
-        <h1 className="mt-5  select-none	text-white text-center tracking-widest roddenberry text-4xl">
+        <h1 className="mt-5 select-none	text-white text-center tracking-widest roddenberry text-4xl">
           WeatherWise
         </h1>
         <div className="">

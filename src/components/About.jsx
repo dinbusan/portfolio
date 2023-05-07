@@ -9,15 +9,15 @@ const About = () => {
           citizenship currently based in Amsterdam, The Netherlands.
           <br />
           <br />
-          After teaching in the USA and South Korea for the past 8, I took the initiative to
-          self-study and learn the basics of programming. However, I soon
-          realized that I needed more structured training to further develop my
-          skills. Determined to pursue a career in software engineering, I made
-          the difficult decision to end my education career and move to the
-          Netherlands to join an intensive full-stack JavaScript bootcamp. This
-          decision has proven to be one of the best I have made, as it allowed
-          me to gain hands-on experience in developing complex web applications
-          using modern technologies and best practices.
+          After teaching in the USA and South Korea for the past 8 years, I took
+          the initiative to self-study and learn the basics of programming.
+          However, I soon realized that I needed more structured training to
+          further develop my skills. Determined to pursue a career in software
+          engineering, I made the difficult decision to end my education career
+          and move to the Netherlands to join an intensive full-stack JavaScript
+          bootcamp. This decision has proven to be one of the best I have made,
+          as it allowed me to gain hands-on experience in developing complex web
+          applications using modern technologies and best practices.
           <br />
           <br /> I am passionate about software development and find myself
           constantly seeking new challenges and opportunities to learn and grow.
