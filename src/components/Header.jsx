@@ -89,7 +89,7 @@ const Header = () => {
           {/* social icons*/}
           <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
             <ul>
-              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-500">
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
                   href="https://www.linkedin.com/in/deann-videtto-8481a166/"
@@ -97,7 +97,7 @@ const Header = () => {
                   Linkedin <FaLinkedin size={30} />
                 </a>
               </li>
-              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
+              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-indigo-500">
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
                   href="https://www.github.com/dinbusan/"
@@ -105,7 +105,7 @@ const Header = () => {
                   Github <FaGithub size={30} />
                 </a>
               </li>
-              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-rose-500">
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
                   href="mailto:deann.videtto@gmail.com"
@@ -113,7 +113,7 @@ const Header = () => {
                   Email <HiOutlineMail size={30} />
                 </a>
               </li>
-              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-500">
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
                   href="assets/deann_videtto_cv.docx"
