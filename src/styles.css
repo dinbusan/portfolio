@@ -4,7 +4,7 @@
 
 @layer components {
   .nav-button {
-    @apply hidden md:flex bg-transparent hover:text-white ease-in duration-200 py-10 px-4 border-blue-500 hover:border-transparent text-3xl;
+    @apply  bg-transparent hover:text-white ease-in duration-200 py-10 px-4 border-blue-500 hover:border-transparent text-3xl;
   }
 }
 
