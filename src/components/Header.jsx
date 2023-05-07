@@ -18,7 +18,7 @@ const Header = () => {
     <div className="">
       <nav className="flex relative z-30 text-2xl text-white bg-black bg-opacity-70">
         <Link to="/">
-          <h1 className="text-5xl tracking-wider star-trek pl-10 pt-2 md:text-8xl">
+          <h1 className="text-5xl tracking-wider star-trek pl-10 pt-2 md:text-6xl lg:text-8xl">
             Deann&#x200a;Videtto
           </h1>
         </Link>
@@ -88,7 +88,7 @@ const Header = () => {
           </ul>
           {/* social icons*/}
           <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
-            <ul>
+            <ul className="">
               <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-500">
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
