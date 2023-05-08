@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="fixed select-none	 w-full h-screen bg-black bg-opacity-60 mt-10 text-white">
+    <div className="select-none	w-full h-screen bg-black bg-opacity-60 mt-4 lg:mt-10 text-white">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full">
         <div className=" w-full flex justify-center items-center flex-col mb-7">
           <p className="text-5xl inline border-b-4 text-center roddenberry tracking-widest">

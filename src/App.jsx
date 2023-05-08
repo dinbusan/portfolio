@@ -10,34 +10,31 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <div className="absolute inset-0 overflow-hidden z-0">
-        <video
-          className="h-full w-full object-cover"
-          autoPlay
-          loop
-          muted
-        >
-          <source src="assets/star_burst_2.mp4" type="video/mp4" />
-        </video>
+    <div
+      style={{ position: "relative", height: "100vh", width: "100vw" }}
+      className="relative overflow-hidden h-full w-full"
+    >
+      <video
+        className="absolute inset-0 h-full w-full object-cover z-0"
+        autoPlay
+        loop
+        muted
+      >
+        <source src="./assets/star_burst_2.mp4" type="video/mp4" />
+      </video>
+      <div className="relative h-full w-full">
+        <Header className="relative flex items-center justify-center h-screen w-screen overflow-hidden" />
+        <div className="route--container">
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </div>
-      {/* <div className="h-screen bg-no-repeat bg-center bg-cover md:hidden">
-        {" "}
-        <img src="./public/assets/stars.jpg" alt="" />
-      </div> */}
-
-      <Header className="relative flex items-center justify-center h-screen w-screen overflow-hidden" />
-      <div className="route--container">
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-      {/* <Footer /> */}
-    </>
+    </div>
   );
 }
 
