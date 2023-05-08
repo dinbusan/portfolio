@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <div className="flex justify-center">
       {isSuccessfullySubmitted ? (
-        <div className="fixed  font-mono mt-20 mx-1 text-center text-white bg-black bg-opacity-60 tracking-wider">
+        <div className="fixed  font-mono mt-20 mx-1 text-center text-white bg-black bg-opacity-50 tracking-wider">
           <h2 className="text-5xl ">Thank you for your message!</h2>
           <p className="text-2xl  mt-10 ">
             I'll get back to you as soon as possible.
