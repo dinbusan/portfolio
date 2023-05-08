@@ -21,34 +21,34 @@ const Skills = () => {
           </p>
         </div>
         <div className="w-full text-xl font-mono grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:text-amber-400">
+          <div className="hover:scale-110 duration-500 hover:text-amber-400">
             <p className="my-4 ">HTML</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:text-rose-400">
+          <div className="hover:scale-110 duration-500 hover:text-rose-400">
             <p className="my-4 ">CSS</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:text-sky-400">
+          <div className="hover:scale-110 duration-500 hover:text-sky-400">
             <p className="my-4 ">JAVASCRIPT</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500  hover:text-indigo-400">
+          <div className="hover:scale-110 duration-500  hover:text-indigo-400">
             <p className="my-4">REACT</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500  hover:text-sky-400">
+          <div className="hover:scale-110 duration-500  hover:text-sky-400">
             <p className="my-4">GITHUB</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:text-indigo-400">
+          <div className="hover:scale-110 duration-500 hover:text-indigo-400">
             <p className="my-4">NODE JS</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:text-rose-400">
+          <div className="hover:scale-110 duration-500 hover:text-rose-400">
             <p className="my-4 ">MONGO DB</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500  hover:text-amber-400">
+          <div className="hover:scale-110 duration-500  hover:text-amber-400">
             <p className="my-4">FIREBASE</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:text-rose-400">
+          <div className="hover:scale-110 duration-500 hover:text-rose-400">
             <p className="my-4 ">Sass</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:text-sky-400">
+          <div className="hover:scale-110 duration-500 hover:text-sky-400">
             <p className="my-4">Mongodb</p>
           </div>
         </div>
