@@ -16,7 +16,7 @@ function App() {
         loop
         muted
       >
-        <source src="./assets/star_burst_2.mp4" type="video/mp4" />
+        <source src="./assets/star_burst_2_lowres.mp4" type="video/mp4" />
       </video>
       <div className="relative h-full w-full">
         <Header className="relative flex items-center justify-center h-screen w-screen overflow-hidden" />
