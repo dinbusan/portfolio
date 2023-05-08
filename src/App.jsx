@@ -8,17 +8,18 @@ function App() {
   return (
     <div
       style={{ position: "relative", height: "100vh", width: "100vw" }}
-      className="relative overflow-hidden h-full w-full"
+      // className="relative overflow-hidden h-full w-full"
     >
       <video
         className="absolute inset-0 h-full w-full object-cover z-0"
         autoPlay
         loop
         muted
+        style = {{position: "fixed"}}
       >
         <source src="/assets/fade_in_out.mp4" type="video/mp4" />
       </video>
-      <div className="relative h-full w-full">
+      <div className="relative z-1 h-full w-full">
         <Header className="relative flex items-center justify-center h-screen w-screen overflow-hidden" />
         <div className="route--container">
           <AnimatedRoutes />
