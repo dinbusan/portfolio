@@ -29,7 +29,7 @@ const Projects = () => {
             <img className="md:h-72 mx-auto" src={project.img} alt="" />
           </motion.div>
           {project.id !== openProjectId && (
-            <p className="text-center">Click me for more info!</p>
+            <p className="mt-1 text-center">Click me for more info!</p>
           )}
           {project.id === openProjectId && (
             <motion.div
