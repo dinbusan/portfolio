@@ -11,14 +11,22 @@ function App() {
       // className="relative overflow-hidden h-full w-full"
     >
       <video
-        className="absolute inset-0 h-full w-full object-cover z-0"
+        className="hidden md:block absolute inset-0 h-full w-full object-cover z-0"
         autoPlay
         loop
         muted
-        style = {{position: "fixed"}}
+        style={{ position: "fixed" }}
       >
         <source src="/assets/fade_in_out.mp4" type="video/mp4" />
       </video>
+      <div className="md:hidden absolute inset-0">
+        <img
+          className="h-full w-full object-cover"
+          src="./assets/stars_img.jpg"
+          alt=""
+        />
+      </div>
+
       <div className="relative z-1 h-full w-full">
         <Header className="relative flex items-center justify-center h-screen w-screen overflow-hidden" />
         <div className="route--container">
