@@ -20,7 +20,7 @@ const Projects = () => {
           key={project.id}
         >
           <motion.h2
-            className="text-3xl text-center hover:scale-125"
+            className="text-3xl text-center"
             layout="position"
           >
             {project.name}
