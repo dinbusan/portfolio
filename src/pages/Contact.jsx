@@ -1,6 +1,8 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
+
 
 const Contact = () => {
   const {
@@ -37,7 +39,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex justify-center">
+    <motion.div
+      className="flex justify-center"
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}
+      transition={{ duration: 0.3 }}
+    >
       {isSuccessfullySubmitted ? (
         <div className="fixed  font-mono mt-20 mx-1 text-center text-white bg-black bg-opacity-50 tracking-wider">
           <h2 className="text-5xl ">Thank you for your message!</h2>
@@ -112,7 +120,7 @@ const Contact = () => {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

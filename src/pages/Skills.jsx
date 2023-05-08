@@ -1,8 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="select-none	w-full h-screen bg-black bg-opacity-60 mt-4 lg:mt-10 text-white">
+    <motion.div
+      className="select-none	w-full h-screen bg-black bg-opacity-60 mt-4 lg:mt-10 text-white"
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full">
         <div className=" w-full flex justify-center items-center flex-col mb-7">
           <p className="text-5xl inline border-b-4 text-center roddenberry tracking-widest">
@@ -46,7 +53,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

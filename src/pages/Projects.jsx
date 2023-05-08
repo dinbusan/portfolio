@@ -1,8 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 
 const Projects = () => {
   return (
-    <div className="projects-container relative bg-black bg-opacity-60 m-2 lg:w-1/2 md:m-auto">
+    <motion.div
+      className="projects-container relative bg-black bg-opacity-60 m-2 lg:w-1/2 md:m-auto"
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="">
         <h1 className="mt-5 select-none	text-white text-center tracking-widest roddenberry text-4xl">
           WeatherWise
@@ -49,7 +57,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
