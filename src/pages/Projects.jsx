@@ -19,17 +19,16 @@ const Projects = () => {
           transition={{ layout: { duration: 1, type: "spring" } }}
           key={project.id}
         >
-          <motion.h2
-            className="text-3xl text-center"
-            layout="position"
-          >
+          <motion.h2 className="text-3xl text-center" layout="position">
             {project.name}
           </motion.h2>
           <motion.div layout className="max-w-100% h-auto mt-2 mx-auto">
             <img className="md:h-72 mx-auto" src={project.img} alt="" />
           </motion.div>
           {project.id !== openProjectId && (
-            <p className="mt-1 text-center">Click me for more info!</p>
+            <p className="mt-1 text-center">
+              More info <span className="text-xl">&#8594;</span>
+            </p>
           )}
           {project.id === openProjectId && (
             <motion.div
