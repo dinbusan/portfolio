@@ -36,7 +36,7 @@ const Projects = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="pt-1 leading-7  "
+              className="pt-2 leading-7  "
             >
               <p>
                 {project.desc} Check it out here:{" "}
