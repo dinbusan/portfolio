@@ -22,7 +22,7 @@ function App() {
       <div className="md:hidden absolute inset-0">
         <img
           className="h-full w-full object-cover"
-          src="./assets/stars_img.jpg"
+          src="./assets/stars_img2.jpg"
           alt=""
         />
       </div>
