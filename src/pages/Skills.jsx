@@ -21,36 +21,287 @@ const Skills = () => {
           </p>
         </div>
         <div className="w-full text-xl font-mono grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="hover:scale-110 duration-500 hover:text-amber-400">
-            <p className="my-4 ">HTML</p>
-          </div>
-          <div className="hover:scale-110 duration-500 hover:text-rose-400">
-            <p className="my-4 ">CSS</p>
-          </div>
-          <div className="hover:scale-110 duration-500 hover:text-sky-400">
-            <p className="my-4 ">JAVASCRIPT</p>
-          </div>
-          <div className="hover:scale-110 duration-500  hover:text-indigo-400">
-            <p className="my-4">REACT</p>
-          </div>
-          <div className="hover:scale-110 duration-500  hover:text-sky-400">
-            <p className="my-4">GITHUB</p>
-          </div>
-          <div className="hover:scale-110 duration-500 hover:text-indigo-400">
-            <p className="my-4">NODE JS</p>
-          </div>
-          <div className="hover:scale-110 duration-500 hover:text-rose-400">
-            <p className="my-4 ">MONGO DB</p>
-          </div>
-          <div className="hover:scale-110 duration-500  hover:text-amber-400">
-            <p className="my-4">FIREBASE</p>
-          </div>
-          <div className="hover:scale-110 duration-500 hover:text-rose-400">
-            <p className="my-4 ">Sass</p>
-          </div>
-          <div className="hover:scale-110 duration-500 hover:text-sky-400">
-            <p className="my-4">Mongodb</p>
-          </div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 3,
+              repeatDelay: 3,
+              repeatType: "reverse",
+            }}
+            // className=""
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#fbbf24"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 3,
+                repeatDelay: 3,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              HTML
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 1,
+              repeatDelay: 4,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#fb7185"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 1,
+                repeatDelay: 4,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              CSS
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 4,
+              repeatDelay: 3,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#38bdf8"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 4,
+                repeatDelay: 3,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              JAVASCRIPT
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 3,
+              repeatDelay: 2,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#818cf8"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 3,
+                repeatDelay: 2,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              REACT
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 4,
+              repeatDelay: 4,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#38bdf8"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 4,
+                repeatDelay: 4,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              GITHUB
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 2,
+              repeatDelay: 3,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#818cf8"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 2,
+                repeatDelay: 3,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              NODE JS
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 4,
+              repeatDelay: 4,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#fbbf24"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 4,
+                repeatDelay: 4,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              MONGO DB
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 3,
+              repeatDelay: 2,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#38bdf8"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 3,
+                repeatDelay: 2,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              FIREBASE
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 1,
+              repeatDelay: 3,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#fb7185"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 1,
+                repeatDelay: 3,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              TAILWIND
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 4,
+              repeatDelay: 4,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#fbbf24"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 4,
+                repeatDelay: 4,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              FRAMER
+            </motion.p>
+          </motion.div>
         </div>
       </div>
     </motion.div>
