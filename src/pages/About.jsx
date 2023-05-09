@@ -16,14 +16,14 @@ const About = () => {
         <p className=" md:mx-auto md:text-center lg:text-left lg:w-1/3 p-5 text-white"> */}
 
       <div className="lg:flex max-h-750px overflow-y-auto ">
-        <div className="mx-5 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 lg:pt-5 lg:mr-5">
+        <div className="mx-5 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 lg:pt-5 lg:mr-10">
           <img
             className="object-cover"
             src="./assets/deann_peace.jpeg"
             alt=""
           />
         </div>
-        <p className="mx-5 md:mx-auto md:text-center lg:text-left lg:w-3/4  text-white">
+        <p className="mx-5 md:mx-auto md:text-center lg:text-left lg:w-3/4  lg:mr-10 text-white">
           Hello, I'm Deann, a full-stack JavaScript developer based in
           Amsterdam, the Netherlands. <br />
           <br /> Originally from Iowa in the US, I spent several years teaching
