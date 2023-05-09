@@ -67,10 +67,10 @@ const Contact = () => {
               className="flex flex-1 flex-col justify-evenly font-mono"
               ref={reset}
             >
-              <label htmlFor="from_name">Name</label>
+              <label htmlFor="from_name">Can I get your name?</label>
               <input
                 className="border-2 outline-none p-2 rounded-md"
-                placeholder="Name"
+                placeholder="Jean-Luc Picard"
                 type="text"
                 name="from_name"
                 disabled={isSubmitting}
@@ -81,10 +81,10 @@ const Contact = () => {
                   {errors.from_name.message}
                 </span>
               )}
-              <label htmlFor="from_email">Email</label>
+              <label htmlFor="from_email">How about your email?</label>
               <input
                 className="border-2 outline-none p-2 rounded-md"
-                placeholder="Email"
+                placeholder="enterprise_1701@gmail.com"
                 type="email"
                 name="from_email"
                 disabled={isSubmitting}
@@ -97,11 +97,11 @@ const Contact = () => {
                   {errors.from_email.message}
                 </span>
               )}
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">Write me a message...</label>
               <textarea
                 className="border-2 outline-none p-2 rounded-md"
                 name="message"
-                placeholder="Send me a message"
+                placeholder="Make it so."
                 disabled={isSubmitting}
                 {...register("message", { required: "Please enter a message" })}
               />
