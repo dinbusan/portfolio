@@ -22,8 +22,23 @@ const Projects = () => {
           <motion.h2 className="text-3xl text-center" layout="position">
             {project.name}
           </motion.h2>
-          <p className="text-sm font-bold pt-4 text-center">{project.tech}</p>
-          <motion.div layout className="max-w-100% h-auto mt-2 mx-auto">
+          <motion.p
+            layout="position"
+            className="text-sm font-bold pt-4 text-center"
+          >
+            {project.tech}
+          </motion.p>
+          <motion.p className="text-center" layout="position">
+            Check it out here:{" "}
+            <a
+              className="font-semibold text-rose-400 hover:text-indigo-400 underline visited:text-sky-400"
+              href={project.link}
+              target="_blank"
+            >
+              Link
+            </a>
+          </motion.p>
+          <motion.div layout className="max-w-100% h-auto mt-0 mx-auto">
             <img
               className="md:h-72 mx-auto object-scale-down"
               src={project.img}
@@ -42,16 +57,7 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="pt-2 leading-7  "
             >
-              <p>
-                {project.desc} Check it out here:{" "}
-                <a
-                  className="font-semibold text-rose-400 hover:text-indigo-400 underline visited:text-sky-400"
-                  href={project.link}
-                  target="_blank"
-                >
-                  Link
-                </a>
-              </p>
+              <p>{project.desc}</p>
             </motion.div>
           )}
         </motion.div>
