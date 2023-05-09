@@ -23,7 +23,7 @@ const About = () => {
             alt=""
           />
         </div>
-        <p className="md:mx-auto md:text-center lg:mx-5 lg:text-left lg:w-3/4  text-white">
+        <p className="mx-5 md:mx-auto md:text-center lg:text-left lg:w-3/4  text-white">
           Hello, I'm Deann, a full-stack JavaScript developer based in
           Amsterdam, the Netherlands. <br />
           <br /> Originally from Iowa in the US, I spent several years teaching
