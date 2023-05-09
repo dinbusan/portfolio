@@ -16,7 +16,7 @@ export default {
         id: uuidv4(),
         name: "DevHub",
         desc: "DevHub is a social media website designed for developers to connect and collaborate on development projects.",
-        tech: "React.js | JavaScript | TailwindCSS | Redux | Google Maps API | Reddit API | Firebase",
+        tech: "React.js | JavaScript | TailwindCSS | Redux | Google Maps API | Firebase",
         img: "./assets/devhub.png",
         link: "https://github.com/dinbusan/dev-hub",
       },
