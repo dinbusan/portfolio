@@ -19,7 +19,7 @@ const Projects = () => {
           transition={{ layout: { duration: 1, type: "spring" } }}
           key={project.id}
         >
-          <motion.h2 className="text-3xl text-center" layout="position">
+          <motion.h2 className="text-2xl sm:text-3xl text-center" layout="position">
             {project.name}
           </motion.h2>
           <motion.p
