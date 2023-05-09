@@ -24,6 +24,7 @@ function App() {
           className="h-full w-full object-cover"
           src="./assets/stars_img2.jpg"
           alt=""
+          style={{ position: "fixed" }}
         />
       </div>
 
