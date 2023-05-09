@@ -16,7 +16,7 @@ const About = () => {
         <p className=" md:mx-auto md:text-center lg:text-left lg:w-1/3 p-5 text-white"> */}
 
       <div className="lg:flex max-h-750px overflow-y-auto ">
-        <div className="mx-5 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 lg:pt-5">
+        <div className="mx-5 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 lg:pt-5 lg:mr-5">
           <img
             className="object-cover"
             src="./assets/deann_peace.jpeg"
