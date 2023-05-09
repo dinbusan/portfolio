@@ -17,7 +17,7 @@ const Header = () => {
     <div className="">
       <nav className="flex relative z-30 text-2xl text-white bg-black bg-opacity-70">
         <Link to="/">
-          <h1 className="text-5xl tracking-wider star-trek pl-10 pt-2 md:text-6xl lg:text-8xl">
+          <h1 className="text-4xl sm:text-5xl tracking-wider star-trek pl-10 pt-2 md:text-6xl lg:text-8xl">
             Deann&#x200a;Videtto
           </h1>
         </Link>
