@@ -23,7 +23,7 @@ const Projects = () => {
             {project.name}
           </motion.h2>
           <motion.div layout className="max-w-100% h-auto mt-2 mx-auto">
-            <img className="md:h-72 mx-auto" src={project.img} alt="" />
+            <img className="md:h-72 mx-auto object-scale-down" src={project.img} alt="" />
           </motion.div>
           {project.id !== openProjectId && (
             <p className="mt-1 text-center">

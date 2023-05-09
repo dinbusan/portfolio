@@ -18,6 +18,13 @@ export default {
         img: "./assets/devhub.png",
         link: "https://github.com/dinbusan/dev-hub",
       },
+      {
+        id: uuidv4(),
+        name: "Portfolio",
+        desc: "My portfolio website was created using React, TailwindCSS, FramerMotion, React Form Hook, and the EmailJS API.",
+        img: "./assets/portfolio.png",
+        link: "https://www.deannvidetto.com",
+      },
     ],
   },
 };
