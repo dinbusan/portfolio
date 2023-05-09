@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Skills = () => {
   return (
     <motion.div
-      className="select-none	w-full h-screen bg-black bg-opacity-60 mt-4 lg:mt-10 text-white"
+      className="select-none	w-full h-full bg-black bg-opacity-60 mt-4 lg:mt-10 text-white"
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
