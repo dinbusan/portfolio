@@ -22,11 +22,16 @@ const Projects = () => {
           <motion.h2 className="text-3xl text-center" layout="position">
             {project.name}
           </motion.h2>
+          <p className="text-sm font-bold pt-4 text-center">{project.tech}</p>
           <motion.div layout className="max-w-100% h-auto mt-2 mx-auto">
-            <img className="md:h-72 mx-auto object-scale-down" src={project.img} alt="" />
+            <img
+              className="md:h-72 mx-auto object-scale-down"
+              src={project.img}
+              alt=""
+            />
           </motion.div>
           {project.id !== openProjectId && (
-            <p className="mt-1 text-center">
+            <p className="mt-1 text-center hover:scale-105">
               More info <span className="text-xl">&#8594;</span>
             </p>
           )}
@@ -47,7 +52,6 @@ const Projects = () => {
                   Link
                 </a>
               </p>
-              <p className="text-sm font-bold pt-4 text-center">{project.tech}</p>
             </motion.div>
           )}
         </motion.div>
