@@ -148,7 +148,7 @@ const Skills = () => {
           >
             <motion.p
               animate={{
-                color: ["#fff", "#38bdf8"],
+                color: ["#fff", "#fb7185"],
               }}
               transition={{
                 ease: "linear",
@@ -260,7 +260,7 @@ const Skills = () => {
           >
             <motion.p
               animate={{
-                color: ["#fff", "#fb7185"],
+                color: ["#fff", "#38bdf8"],
               }}
               transition={{
                 ease: "linear",
