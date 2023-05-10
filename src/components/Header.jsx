@@ -36,7 +36,7 @@ const Header = () => {
               <li className="nav-button hover:bg-indigo-400">PROJECTS</li>
             </Link>
             <Link to="/contact">
-              <li className="nav-button hover:bg-amber-400">CONTACT</li>
+              <li className="nav-button hover:bg-rose-400">CONTACT</li>
             </Link>
           </ul>
           {/*hamburger*/}
