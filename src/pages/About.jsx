@@ -16,7 +16,7 @@ const About = () => {
       animation.start({
         opacity: 1,
         x: 0,
-        transition: { duration: .7 },
+        transition: { duration: 0.7 },
       });
     }
     if (!inView) {
@@ -54,7 +54,7 @@ const About = () => {
             alt=""
           />
         </div>
-        <p className="mb-16 leading-7 mx-5 md:mx-10 md:text-center lg:text-left lg:w-3/4 lg:mr-10 xl:mr-32 text-white">
+        <p className="mb-5 leading-7 mx-5 md:mx-10 md:text-center lg:text-left lg:w-3/4 lg:mr-10 xl:mr-32 text-white">
           Hello, I'm Deann, a full-stack JavaScript developer based in
           Amsterdam, the Netherlands. <br />
           <br /> Originally from Iowa in the US, I spent several years teaching
@@ -79,6 +79,31 @@ const About = () => {
           Thank you for visiting my personal portfolio website. If you have any
           questions or would like to collaborate on a project, please feel free
           to get in touch via my contact page!
+          <span className=""></span>
+        </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ delay: 0.1, duration: 0.5 }}
+        className="mx-auto mb-10 "
+      >
+        <p className="text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="text-white w-10 h-10 animate-[bounce_2s_linear_infinite]"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
         </p>
       </motion.div>
       <hr className="w-3/4 mx-auto" />
@@ -86,7 +111,7 @@ const About = () => {
       <motion.div
         ref={ref}
         animate={animation}
-        className="mt-16 roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-10 xl:mb-36"
+        className="mt-16 xl:mt-8 roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-10 xl:mb-36"
       >
         <h1 className="tracking-wider">Skills</h1>
       </motion.div>
