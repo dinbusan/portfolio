@@ -56,7 +56,7 @@ const About = () => {
             alt=""
           />
         </motion.div>
-        <p className="xl:mx-auto mx-6 text-center bg-black bg-opacity-40 mb-5 leading-7 md:mx-10 lg:text-left lg:w-3/4 lg:mr-10 xl:w-1/3 xl:mr-1 xl:pl-6 text-white">
+        <p className="xl:mx-auto mx-6 text-center bg-black bg-opacity-40 mb-5 leading-loose md:mx-10 lg:text-left lg:w-3/4 lg:mr-10 xl:w-1/3 xl:mr-1 xl:pl-6 text-white">
           Hello, I'm Deann, a full-stack JavaScript developer based in
           Amsterdam, the Netherlands. <br />
           <br /> Originally from Iowa in the US, I spent several years teaching
