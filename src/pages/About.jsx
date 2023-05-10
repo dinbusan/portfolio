@@ -33,7 +33,7 @@ const About = () => {
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.8 }}
       className="select-none flex-col	inset-0 font-mono flex justify-center pt-10 pb-16 md:pt-0"
     >
       <motion.div className="inline-flex items-center md:bg-black md:bg-opacity-40 justify-center w-full xl:w-1/3 xl:mt-20 xl:ml-72">
