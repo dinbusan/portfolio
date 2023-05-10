@@ -108,7 +108,7 @@ const About = () => {
           </svg>
         </p>
       </motion.div>
-      <motion.div className="inline-flex items-center md:bg-black md:bg-opacity-50 justify-center w-full xl:w-2/3 xl:mt-10 xl:mx-auto">
+      <motion.div className="inline-flex items-center md:bg-black md:bg-opacity-50 justify-center w-full xl:w-2/3 xl:mx-auto">
         <motion.h1 className="roddenberry text-white text-2xl md:text-4xl xl:text-2xl tracking-widest">
           SKILLS
         </motion.h1>
