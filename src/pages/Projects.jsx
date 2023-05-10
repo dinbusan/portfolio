@@ -8,7 +8,13 @@ const Projects = () => {
   const projects = projectsData.data.projects;
 
   return (
-    <div className="pb-5 flex flex-wrap justify-center">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}
+      transition={{ duration: 0.5 }}
+      className="pb-5 flex flex-wrap justify-center"
+    >
       {projects.map((project) => (
         <motion.div
           layout
@@ -19,16 +25,19 @@ const Projects = () => {
           transition={{ layout: { duration: 1, type: "spring" } }}
           key={project.id}
         >
-          <motion.h2 className="text-2xl sm:text-3xl text-center" layout="position">
+          <motion.h2
+            className="text-2xl sm:text-3xl text-center"
+            layout="position"
+          >
             {project.name}
           </motion.h2>
           <motion.p
             layout="position"
-            className="text-sm font-bold pt-4 text-center"
+            className="leading-6 text-sm font-bold pt-4 text-center"
           >
             {project.tech}
           </motion.p>
-          <motion.p className="text-center" layout="position">
+          <motion.p className="text-center mt-2" layout="position">
             Check it out here:{" "}
             <a
               className="font-semibold text-rose-400 hover:text-indigo-400 underline visited:text-sky-400"
@@ -62,7 +71,7 @@ const Projects = () => {
           )}
         </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
