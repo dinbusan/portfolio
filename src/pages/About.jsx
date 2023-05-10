@@ -5,56 +5,58 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 
 const About = () => {
-  const { ref, inView } = useInView({
-    // threshold: 0.1,
-  });
-  const animation = useAnimation();
+  // const { ref, inView } = useInView({
+  //   // threshold: 0.1,
+  // });
+  // const animation = useAnimation();
 
-  useEffect(() => {
-    console.log("use effect hook, inView = ", inView);
-    if (inView) {
-      animation.start({
-        opacity: 1,
-        x: 0,
-        transition: { delay: 0.2, duration: 1 },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-        x: 100,
-        transition: { duration: 0.3 },
-      });
-    }
-  }, [inView]);
+  // useEffect(() => {
+  //   console.log("use effect hook, inView = ", inView);
+  //   if (inView) {
+  //     animation.start({
+  //       opacity: 1,
+  //       x: 0,
+  //       transition: { delay: 0.2, duration: 1 },
+  //     });
+  //   }
+  //   if (!inView) {
+  //     animation.start({
+  //       opacity: 0,
+  //       x: 100,
+  //       transition: { duration: 0.3 },
+  //     });
+  //   }
+  // }, [inView]);
 
   return (
-    <motion.div className="select-none flex-col	inset-0 font-mono bg-black bg-opacity-50 flex justify-center pt-20 pb-16 md:pt-32">
-      <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
-        transition={{ duration: 0.3 }}
-        className="roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-36"
-      >
-        <h1>ABOUT ME</h1>
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}
+      transition={{ duration: 0.4 }}
+      className="select-none flex-col	inset-0 font-mono flex justify-center pt-10 pb-16 md:pt-0"
+    >
+      <motion.div className="inline-flex items-center md:bg-black md:bg-opacity-40 justify-center w-full xl:w-1/3 xl:mt-20 xl:ml-72">
+        <motion.h1 className="roddenberry text-white text-2xl md:text-4xl xl:text-2xl tracking-widest">
+          ABOUT ME
+        </motion.h1>
+        <motion.hr className="w-64 md:w-2/3 h-0.5 my-8 xl:my-0 ml-1 md:ml-5 xl:ml-1 border-0 bg-gray-300"></motion.hr>
       </motion.div>
-      <hr className="w-3/4 mx-auto" />
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
         transition={{ delay: 0.1, duration: 0.8 }}
-        className="lg:flex max-h-750px overflow-y-auto mt-20"
+        className=" lg:flex max-h-750px overflow-y-auto mt-5"
       >
-        <div className="mx-5 mb-10 xl:mt-16 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 xl:ml-32 lg:pt-20 xl:pt-5">
+        <motion.div className="xl:order-last w-3/4 md:w-1/3 mx-auto mb-5 lg:ml-20 lg:pt-20 xl:ml-5 xl:pt-0 xl:w-1/4 xl:mt-16">
           <img
-            className="object-cover"
+            className="object-cover "
             src="./assets/deann_peace.jpeg"
             alt=""
           />
-        </div>
-        <p className="mb-5 leading-7 mx-5 md:mx-10 md:text-center lg:text-left lg:w-3/4 lg:mr-10 xl:mr-32 text-white">
+        </motion.div>
+        <p className="xl:mx-auto mx-6 text-center bg-black bg-opacity-40 mb-5 leading-7 md:mx-10 lg:text-left lg:w-3/4 lg:mr-10 xl:w-1/3 xl:mr-1 xl:pl-6 text-white">
           Hello, I'm Deann, a full-stack JavaScript developer based in
           Amsterdam, the Netherlands. <br />
           <br /> Originally from Iowa in the US, I spent several years teaching
@@ -76,9 +78,9 @@ const About = () => {
           When I'm not coding, I enjoy playing board games, exploring new
           places, and catching up on the latest true-crime documentaries. <br />
           <br />
-          Thank you for visiting my personal portfolio website. If you have any
+          {/* Thank you for visiting my personal portfolio website. If you have any
           questions or would like to collaborate on a project, please feel free
-          to get in touch via my contact page!
+          to get in touch via my contact page! */}
           <span className=""></span>
         </p>
       </motion.div>
@@ -106,16 +108,17 @@ const About = () => {
           </svg>
         </p>
       </motion.div>
-      <motion.hr className="w-3/4 mx-auto" />
-      <motion.div
-        ref={ref}
-        animate={animation}
-        className="mt-16 xl:mt-10 roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-10"
-      >
-        <h1 className="tracking-wider">Skills</h1>
+      <motion.div className="inline-flex items-center md:bg-black md:bg-opacity-50 justify-center w-full xl:w-2/3 xl:mt-10 xl:mx-auto">
+        <motion.h1 className="roddenberry text-white text-2xl md:text-4xl xl:text-2xl tracking-widest">
+          SKILLS
+        </motion.h1>
+        <motion.hr className="w-64 md:w-2/3 h-0.5 my-8 xl:my-0 ml-1 md:ml-5 xl:ml-5 border-0 bg-gray-300"></motion.hr>
       </motion.div>
-      <motion.hr animate={animation} className="w-3/4 mx-auto" />
-      <motion.div animate={animation}>{<Skills />}</motion.div>
+      <motion.div
+      // animate={animation}
+      >
+        {<Skills />}
+      </motion.div>
     </motion.div>
   );
 };
