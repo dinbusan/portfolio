@@ -5,28 +5,28 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 
 const About = () => {
-  // const { ref, inView } = useInView({
-  //   // threshold: 0.1,
-  // });
-  // const animation = useAnimation();
+  const { ref, inView } = useInView({
+    // threshold: 0.1,
+  });
+  const animation = useAnimation();
 
-  // useEffect(() => {
-  //   console.log("use effect hook, inView = ", inView);
-  //   if (inView) {
-  //     animation.start({
-  //       opacity: 1,
-  //       x: 0,
-  //       transition: { delay: 0.2, duration: 1 },
-  //     });
-  //   }
-  //   if (!inView) {
-  //     animation.start({
-  //       opacity: 0,
-  //       x: 100,
-  //       transition: { duration: 0.3 },
-  //     });
-  //   }
-  // }, [inView]);
+  useEffect(() => {
+    console.log("use effect hook, inView = ", inView);
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        x: 0,
+        transition: { delay: 0.2, duration: 1 },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+        x: 100,
+        transition: { duration: 0.3 },
+      });
+    }
+  }, [inView]);
 
   return (
     <motion.div
@@ -64,9 +64,8 @@ const About = () => {
           interpersonal skills. <br />
           <br />
           Driven by my passion for technology, I transitioned to a career in web
-          development. Since then, I have been
-          constantly learning and experimenting with new technologies and
-          approaches to development.
+          development. Since then, I have been constantly learning and
+          experimenting with new technologies and approaches to development.
           <br />
           <br />I have a keen interest in front-end development and creating
           visually appealing and responsive websites. I particularly enjoy
@@ -105,14 +104,18 @@ const About = () => {
           </svg>
         </p>
       </motion.div>
-      <motion.div className="inline-flex items-center md:bg-black md:bg-opacity-50 justify-center w-full xl:w-2/3 xl:mx-auto">
+      <motion.div
+        ref={ref}
+        animate={animation}
+        className="inline-flex items-center md:bg-black md:bg-opacity-50 justify-center w-full xl:w-2/3 xl:mx-auto"
+      >
         <motion.h1 className="roddenberry text-white text-2xl md:text-4xl xl:text-2xl tracking-widest">
           SKILLS
         </motion.h1>
         <motion.hr className="w-64 md:w-2/3 h-0.5 my-8 xl:my-0 ml-1 md:ml-5 xl:ml-5 border-0 bg-gray-300"></motion.hr>
       </motion.div>
       <motion.div
-      // animate={animation}
+      
       >
         {<Skills />}
       </motion.div>
