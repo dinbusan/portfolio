@@ -44,7 +44,7 @@ const About = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
-        transition={{ delay: 0.1, duration: 0.5 }}
+        transition={{ delay: 0.1, duration: 0.8 }}
         className="lg:flex max-h-750px overflow-y-auto mt-20"
       >
         <div className="mx-5 mb-10 xl:mt-16 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 xl:ml-32 lg:pt-20 xl:pt-5">
@@ -106,17 +106,15 @@ const About = () => {
           </svg>
         </p>
       </motion.div>
-      <hr className="w-3/4 mx-auto" />
-
+      <motion.hr ref={ref} animate={animation} className="w-3/4 mx-auto" />
       <motion.div
-        ref={ref}
         animate={animation}
-        className="mt-16 xl:mt-8 roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-10 xl:mb-36"
+        className="mt-16 xl:mt-10 roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-10"
       >
         <h1 className="tracking-wider">Skills</h1>
       </motion.div>
-      <hr className="w-3/4 mx-auto" />
-      <motion.div ref={ref} animate={animation}>
+      <motion.hr animate={animation} className="w-3/4 mx-auto" />
+      <motion.div animate={animation}>
         {<Skills />}
       </motion.div>
     </motion.div>
