@@ -21,7 +21,7 @@ const Projects = () => {
           onClick={() =>
             setOpenProjectId(project.id === openProjectId ? null : project.id)
           }
-          className="bg-white mt-10 rounded mx-1 lg:mx-5 lg:w-1/4 w-5/6 h-full py-3 px-4 font-mono cursor-pointer"
+          className="bg-white mt-10 rounded mx-1 lg:mx-5 lg:w-1/4 w-5/6 h-full py-3  font-mono cursor-pointer"
           transition={{ layout: { duration: 1, type: "spring" } }}
           key={project.id}
         >
@@ -33,7 +33,7 @@ const Projects = () => {
           </motion.h2>
           <motion.p
             layout="position"
-            className="leading-6 text-sm font-bold pt-4 text-center"
+            className="leading-6 text-sm font-bold pt-4 px-4 text-center"
           >
             {project.tech}
           </motion.p>
