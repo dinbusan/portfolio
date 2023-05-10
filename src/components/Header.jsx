@@ -88,7 +88,7 @@ const Header = () => {
           {/* social icons*/}
           <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
             <ul className="">
-              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-500">
+              <li className="w-[160px] h-[60px] pl-3 pr-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-500">
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
                   href="https://www.linkedin.com/in/deann-videtto-8481a166/"
@@ -98,7 +98,7 @@ const Header = () => {
               </li>
               <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-indigo-500">
                 <a
-                  className="flex justify-between items-center w-full text-gray-300"
+                  className="flex justify-between pr-4 items-center w-full text-gray-300"
                   href="https://www.github.com/dinbusan/"
                 >
                   Github <FaGithub size={30} />
@@ -106,13 +106,13 @@ const Header = () => {
               </li>
               <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-rose-500">
                 <a
-                  className="flex justify-between items-center w-full text-gray-300"
+                  className="flex justify-between pr-4  items-center w-full text-gray-300"
                   href="mailto:deann.videtto@gmail.com"
                 >
                   Email <HiOutlineMail size={30} />
                 </a>
               </li>
-              <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-500">
+              <li className="w-[160px] h-[60px] pl-3 pr-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-500">
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
                   href="assets/deann_videtto_cv.docx"
