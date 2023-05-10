@@ -29,9 +29,9 @@ const Header = () => {
             <Link to="/about">
               <li className="nav-button hover:bg-sky-400">ABOUT</li>
             </Link>
-            <Link to="/skills">
+            {/* <Link to="/skills">
               <li className="nav-button hover:bg-rose-400">SKILLS</li>
-            </Link>
+            </Link> */}
             <Link to="/projects">
               <li className="nav-button hover:bg-indigo-400">PROJECTS</li>
             </Link>
@@ -66,12 +66,12 @@ const Header = () => {
                 About
               </Link>
             </li>
-            <li className="py-6 text-4xl">
+            {/* <li className="py-6 text-4xl">
               {" "}
               <Link onClick={handleClick} to="/skills">
                 Skills
               </Link>
-            </li>
+            </li> */}
             <li className="py-6 text-4xl">
               {" "}
               <Link onClick={handleClick} to="/projects">

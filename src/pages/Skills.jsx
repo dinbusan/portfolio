@@ -12,9 +12,9 @@ const Skills = () => {
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full">
         <div className=" w-full flex justify-center items-center flex-col mb-7">
-          <p className="text-5xl inline border-b-4 text-center roddenberry tracking-widest">
+          {/* <p className="text-5xl inline border-b-4 text-center roddenberry tracking-widest">
             Skills
-          </p>
+          </p> */}
           <p className="py-4 text-xl text-center font-mono">
             I enjoy diving into and learning new things. Here's a list of
             technologies I've worked with

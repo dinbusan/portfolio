@@ -1,32 +1,37 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Skills from "./Skills";
+
 
 
 const About = () => {
   return (
-    <motion.div
-      className="select-none flex-col	inset-0 font-mono bg-black bg-opacity-50 flex justify-center pt-20 pb-32 md:pt-32"
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -100 }}
-      transition={{ duration: 0.3 }}
-    >
-      {/* <div className="flex-col lg:flex-row max-h-750px overflow-y-auto justify-center">
-        <div className="mx-5 md:w-1/3 md:mx-auto lg:w-1/3 lg:ml-20 lg:pt-5"><img className="" src="./assets/deann_peace.jpeg" alt="" /></div>
-        <p className=" md:mx-auto md:text-center lg:text-left lg:w-1/3 p-5 text-white"> */}
-        <div className="roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-36">
-          <h1>ABOUT ME</h1>
-        </div>
-<hr className="w-3/4 mx-auto"/>
-      <div className="lg:flex max-h-750px overflow-y-auto xl:mt-20">
-        <div className="mx-5 mb-16 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 lg:pt-20">
+    <motion.div className="select-none flex-col	inset-0 font-mono bg-black bg-opacity-50 flex justify-center pt-20 pb-16 md:pt-32">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.3 }}
+        className="roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-36"
+      >
+        <h1>ABOUT ME</h1>
+      </motion.div>
+      <hr className="w-3/4 mx-auto" />
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ delay: .1, duration: 0.5 }}
+        className="lg:flex max-h-750px overflow-y-auto mt-20"
+      >
+        <div className="mx-5 mb-10 xl:m-16 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 lg:pt-20 xl:pt-5">
           <img
             className="object-cover"
             src="./assets/deann_peace.jpeg"
             alt=""
           />
         </div>
-        <p className="mx-5 mb-10 mt-5 md:mx-10 md:text-center lg:text-left lg:w-3/4  lg:mr-10 text-white">
+        <p className="mb-16 leading-7 mx-5 md:mx-10 md:text-center lg:text-left lg:w-3/4 lg:mr-10 text-white">
           Hello, I'm Deann, a full-stack JavaScript developer based in
           Amsterdam, the Netherlands. <br />
           <br /> Originally from Iowa in the US, I spent several years teaching
@@ -52,7 +57,18 @@ const About = () => {
           questions or would like to collaborate on a project, please feel free
           to get in touch via my contact page!
         </p>
-      </div>
+      </motion.div>
+      <hr className="w-3/4 mx-auto" />
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="mt-16 roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-10 xl:mb-36"
+      >
+        <h1 className="tracking-wider">Skills</h1>
+      </motion.div>
+      <hr className="w-3/4 mx-auto" />
+      <div>{<Skills />}</div>
     </motion.div>
   );
 };
