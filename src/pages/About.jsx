@@ -47,14 +47,14 @@ const About = () => {
         transition={{ delay: 0.1, duration: 0.5 }}
         className="lg:flex max-h-750px overflow-y-auto mt-20"
       >
-        <div className="mx-5 mb-10 xl:m-16 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 lg:pt-20 xl:pt-5">
+        <div className="mx-5 mb-10 xl:mt-16 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 xl:ml-32 lg:pt-20 xl:pt-5">
           <img
             className="object-cover"
             src="./assets/deann_peace.jpeg"
             alt=""
           />
         </div>
-        <p className="mb-16 leading-7 mx-5 md:mx-10 md:text-center lg:text-left lg:w-3/4 lg:mr-10 text-white">
+        <p className="mb-16 leading-7 mx-5 md:mx-10 md:text-center lg:text-left lg:w-3/4 lg:mr-10 xl:mr-32 text-white">
           Hello, I'm Deann, a full-stack JavaScript developer based in
           Amsterdam, the Netherlands. <br />
           <br /> Originally from Iowa in the US, I spent several years teaching
