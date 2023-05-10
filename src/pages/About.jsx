@@ -114,11 +114,7 @@ const About = () => {
         </motion.h1>
         <motion.hr className="w-64 md:w-2/3 h-0.5 my-8 xl:my-0 ml-1 md:ml-5 xl:ml-5 border-0 bg-gray-300"></motion.hr>
       </motion.div>
-      <motion.div
-      
-      >
-        {<Skills />}
-      </motion.div>
+      <motion.div animate={animation}>{<Skills />}</motion.div>
     </motion.div>
   );
 };
