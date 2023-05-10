@@ -9,7 +9,7 @@ const Main = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
-          transition={{ delay: 1.5, duration: 0.5 }}
+          transition={{ duration: 0.5 }}
           className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl"
         >
           Hi, I'm Deann.
@@ -18,7 +18,7 @@ const Main = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
-          transition={{ delay: 1.6, duration: 0.5 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
           className="text-4xl mt-10 md:text-5xl xl:text-6xl"
         >
           A fullStack JavaScript developer.
@@ -28,7 +28,7 @@ const Main = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
-        transition={{ delay: 1.7, duration: 0.5 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
         className="mt-10 flex justify-center xl:absolute xl:mt-36 xl:right-0 xl:mr-40"
       >
         <div className="bg-amber-400 w-60 h-60 md:h-72 md:w-72 xl:h-80 xl:w-80 rounded-full">
