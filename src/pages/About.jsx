@@ -1,10 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Skills from "./Skills";
-
-
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { useAnimation } from "framer-motion";
 
 const About = () => {
+  const { ref, inView } = useInView({
+    // threshold: 0.1,
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log("use effect hook, inView = ", inView);
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        x: 0,
+        transition: { duration: 1 },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+        x: 100,
+        transition: { duration: 0.3 },
+      });
+    }
+  }, [inView]);
+
   return (
     <motion.div className="select-none flex-col	inset-0 font-mono bg-black bg-opacity-50 flex justify-center pt-20 pb-16 md:pt-32">
       <motion.div
@@ -21,7 +45,7 @@ const About = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
-        transition={{ delay: .1, duration: 0.5 }}
+        transition={{ delay: 0.1, duration: 0.5 }}
         className="lg:flex max-h-750px overflow-y-auto mt-20"
       >
         <div className="mx-5 mb-10 xl:m-16 md:mx-auto md:w-1/2 lg:w-1/3 lg:ml-20 lg:pt-20 xl:pt-5">
@@ -61,14 +85,16 @@ const About = () => {
       <hr className="w-3/4 mx-auto" />
 
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        ref={ref}
+        animate={animation}
         className="mt-16 roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-10 xl:mb-36"
       >
         <h1 className="tracking-wider">Skills</h1>
       </motion.div>
       <hr className="w-3/4 mx-auto" />
-      <div>{<Skills />}</div>
+      <motion.div ref={ref} animate={animation}>
+        {<Skills />}
+      </motion.div>
     </motion.div>
   );
 };
