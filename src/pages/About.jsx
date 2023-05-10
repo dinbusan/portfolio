@@ -1,9 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Skills from "./Skills";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -17,7 +16,7 @@ const About = () => {
       animation.start({
         opacity: 1,
         x: 0,
-        transition: { duration: 1 },
+        transition: { duration: .7 },
       });
     }
     if (!inView) {
