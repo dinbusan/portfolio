@@ -61,13 +61,10 @@ const About = () => {
           Amsterdam, the Netherlands. <br />
           <br /> Originally from Iowa in the US, I spent several years teaching
           English in Busan, South Korea, where I honed my communication and
-          interpersonal skills. Prior to that, I worked in customer service and
-          education in the United States. <br />
+          interpersonal skills. <br />
           <br />
           Driven by my passion for technology, I transitioned to a career in web
-          development. I taught myself the basics of web development through
-          online resources and bootcamps before enrolling in an intensive
-          full-stack JavaScript bootcamp in Amsterdam. Since then, I have been
+          development. Since then, I have been
           constantly learning and experimenting with new technologies and
           approaches to development.
           <br />
