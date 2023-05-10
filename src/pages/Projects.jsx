@@ -40,7 +40,7 @@ const Projects = () => {
           <motion.p className="text-center mt-2" layout="position">
             Check it out here:{" "}
             <a
-              className="font-semibold text-rose-400 hover:text-indigo-400 underline visited:text-sky-400"
+              className="font-semibold text-rose-400 hover:text-indigo-400 hover:scale-105 underline visited:text-sky-400"
               href={project.link}
               target="_blank"
             >
@@ -64,7 +64,7 @@ const Projects = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="pt-2 leading-7  "
+              className="pt-2 leading-7 px-5 "
             >
               <p>{project.desc}</p>
             </motion.div>
