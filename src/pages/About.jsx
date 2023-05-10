@@ -16,7 +16,7 @@ const About = () => {
       animation.start({
         opacity: 1,
         x: 0,
-        transition: { duration: 0.7 },
+        transition: { delay: 0.2, duration: 1 },
       });
     }
     if (!inView) {
@@ -106,17 +106,16 @@ const About = () => {
           </svg>
         </p>
       </motion.div>
-      <motion.hr ref={ref} animate={animation} className="w-3/4 mx-auto" />
+      <motion.hr className="w-3/4 mx-auto" />
       <motion.div
+        ref={ref}
         animate={animation}
         className="mt-16 xl:mt-10 roddenberry text-white text-center text-7xl md:text-8xl xl:text-9xl tracking-wider mb-16 xl:mb-10"
       >
         <h1 className="tracking-wider">Skills</h1>
       </motion.div>
       <motion.hr animate={animation} className="w-3/4 mx-auto" />
-      <motion.div animate={animation}>
-        {<Skills />}
-      </motion.div>
+      <motion.div animate={animation}>{<Skills />}</motion.div>
     </motion.div>
   );
 };
