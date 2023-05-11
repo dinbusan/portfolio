@@ -11,16 +11,16 @@ const Skills = () => {
       transition={{ duration: 0.3 }}
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full">
-        <div className=" w-full flex justify-center items-center flex-col mb-7">
+        <div className=" w-full flex justify-center items-center flex-col md:mb-7">
           {/* <p className="text-5xl inline border-b-4 text-center roddenberry tracking-widest">
             Skills
           </p> */}
-          <p className="py-4 text-xl text-center font-mono">
+          <p className="py-4 md:text-xl text-center font-mono">
             I enjoy diving into and learning new things. Here's a list of
             technologies I've worked with
           </p>
         </div>
-        <div className="w-full text-xl font-mono grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full text-xl font-mono grid grid-cols-2 sm:grid-cols-4 md:gap-4 text-center py-8">
           <motion.div
             animate={{
               scale: [1, 1.1],
