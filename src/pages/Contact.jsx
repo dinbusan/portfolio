@@ -56,7 +56,7 @@ const Contact = () => {
       ) : (
         <div className="fixed w-full mt-20 md:w-1/2 flex justify-center items-center bg-black bg-opacity-60 p-2">
           <div
-            className="w-5/6  shadow-lg rounded-md bg-white p-2 md:p-8 flex flex-col"
+            className="w-5/6 shadow-lg rounded-md bg-white p-2 md:p-8 flex flex-col"
             style={{ height: "450px" }}
           >
             <h2 className="text-center font-medium text-2xl mb-4 roddenberry tracking-wider text-3xl">
@@ -81,7 +81,7 @@ const Contact = () => {
                   {errors.from_name.message}
                 </span>
               )}
-              <label className="mt-5" htmlFor="from_email">How about your email?</label>
+              <label className="xl:mt-5" htmlFor="from_email">How about your email?</label>
               <input
                 className="border-2 outline-none p-2 rounded-md"
                 placeholder="enterprise_1701@gmail.com"
@@ -97,7 +97,7 @@ const Contact = () => {
                   {errors.from_email.message}
                 </span>
               )}
-              <label className="mt-5" htmlFor="message">Write me a message...</label>
+              <label className="xl:mt-5" htmlFor="message">Write me a message...</label>
               <textarea
                 className="border-2 outline-none p-2 rounded-md"
                 name="message"
