@@ -1,6 +1,6 @@
 import AnimatedRoutes from "./components/AnimatedRoutes";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import "./styles.css";
 
 function App() {

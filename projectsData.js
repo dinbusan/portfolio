@@ -26,7 +26,7 @@ export default {
         desc: "My portfolio website was designed to be visually interesting and easy to navigate.",
         tech: "React | TailwindCSS | FramerMotion | React Form Hook | EmailJS API",
         img: "./assets/portfolio.png",
-        link: "https://www.deannvidetto.com",
+        link: "https://github.com/dinbusan/portfolio",
       },
     ],
   },
