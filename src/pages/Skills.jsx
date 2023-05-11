@@ -20,7 +20,7 @@ const Skills = () => {
             technologies I've worked with
           </p>
         </div>
-        <div className="w-full text-xl font-mono grid grid-cols-2 sm:grid-cols-4 md:gap-4 text-center py-8">
+        <div className="w-full text-xl font-mono grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
           <motion.div
             animate={{
               scale: [1, 1.1],
@@ -225,8 +225,8 @@ const Skills = () => {
             transition={{
               ease: "linear",
               repeat: Infinity,
-              delay: 3,
-              repeatDelay: 2,
+              delay: 2,
+              repeatDelay: 3,
               repeatType: "reverse",
             }}
           >
@@ -237,8 +237,8 @@ const Skills = () => {
               transition={{
                 ease: "linear",
                 repeat: Infinity,
-                delay: 3,
-                repeatDelay: 2,
+                delay: 2,
+                repeatDelay: 3,
                 repeatType: "reverse",
               }}
               className="my-4"
@@ -300,6 +300,34 @@ const Skills = () => {
               className="my-4"
             >
               FRAMER
+            </motion.p>
+          </motion.div>
+          <motion.div
+            animate={{
+              scale: [1, 1.1],
+            }}
+            transition={{
+              ease: "linear",
+              repeat: Infinity,
+              delay: 3,
+              repeatDelay: 4,
+              repeatType: "reverse",
+            }}
+          >
+            <motion.p
+              animate={{
+                color: ["#fff", "#fb7185"],
+              }}
+              transition={{
+                ease: "linear",
+                repeat: Infinity,
+                delay: 3,
+                repeatDelay: 4,
+                repeatType: "reverse",
+              }}
+              className="my-4"
+            >
+              VITE
             </motion.p>
           </motion.div>
         </div>
