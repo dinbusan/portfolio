@@ -64,8 +64,7 @@ const About = () => {
           interpersonal skills. <br />
           <br />
           Driven by my passion for technology, I transitioned to a career in web
-          development. Since then, I have been constantly learning and
-          experimenting with new technologies and approaches to development.
+          development. Since then, I have been continually learning new technologies and approaches to development.
           <br />
           <br />I have a keen interest in front-end development and creating
           visually appealing and responsive websites. I particularly enjoy
