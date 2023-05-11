@@ -24,7 +24,7 @@ export default {
         id: uuidv4(),
         name: "Portfolio",
         desc: "My portfolio website was designed to be visually interesting and easy to navigate.",
-        tech: "React | TailwindCSS | FramerMotion | React Form Hook | EmailJS API",
+        tech: "React | TailwindCSS | FramerMotion | React Form Hook | EmailJS API | Vite",
         img: "./assets/portfolio.png",
         link: "https://github.com/dinbusan/portfolio",
       },
