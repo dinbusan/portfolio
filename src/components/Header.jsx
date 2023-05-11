@@ -64,15 +64,15 @@ const Header = () => {
             }
           >
             <li className="py-6 text-4xl">
-              <Link onClick={handleClick} to="/">
+              <NavLink onClick={handleClick} to="/">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="py-6 text-4xl">
               {" "}
-              <Link onClick={handleClick} to="/about">
+              <NavLink onClick={handleClick} to="/about">
                 About
-              </Link>
+              </NavLink>
             </li>
             {/* <li className="py-6 text-4xl">
               {" "}
@@ -82,15 +82,15 @@ const Header = () => {
             </li> */}
             <li className="py-6 text-4xl">
               {" "}
-              <Link onClick={handleClick} to="/projects">
+              <NavLink onClick={handleClick} to="/projects">
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li className="py-6 text-4xl">
               {" "}
-              <Link onClick={handleClick} to="/contact">
+              <NavLink onClick={handleClick} to="/contact">
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
           {/* social icons*/}
