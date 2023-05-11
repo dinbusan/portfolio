@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   FaBars,
   FaTimes,
@@ -23,21 +23,29 @@ const Header = () => {
         </Link>
         <div className="ml-auto mr-5 mt-3 md:mt-0 md:ml-auto ">
           <ul className="hidden md:flex space-x-0 tracking-wider flex mx-0 text-amber-400 roddenberry">
-            <Link to="/">
-              <li className="nav-button hover:bg-amber-400">HOME</li>
-            </Link>
-            <Link to="/about">
-              <li className="nav-button hover:bg-sky-400">ABOUT</li>
-            </Link>
+            <NavLink to="/" className="nav_active">
+              <li className="nav-button hover:bg-amber-400 hover:underline underline-offset-8">
+                HOME
+              </li>
+            </NavLink>
+            <NavLink to="/about" className="nav_active">
+              <li className="nav-button hover:bg-sky-400 hover:underline underline-offset-8">
+                ABOUT
+              </li>
+            </NavLink>
             {/* <Link to="/skills">
               <li className="nav-button hover:bg-rose-400">SKILLS</li>
             </Link> */}
-            <Link to="/projects">
-              <li className="nav-button hover:bg-indigo-400">PROJECTS</li>
-            </Link>
-            <Link to="/contact">
-              <li className="nav-button hover:bg-rose-400">CONTACT</li>
-            </Link>
+            <NavLink to="/projects" className="nav_active">
+              <li className="nav-button hover:bg-indigo-400 hover:underline underline-offset-8">
+                PROJECTS
+              </li>
+            </NavLink>
+            <NavLink to="/contact" className="nav_active">
+              <li className="nav-button hover:bg-rose-400 hover:underline underline-offset-8">
+                CONTACT
+              </li>
+            </NavLink>
           </ul>
           {/*hamburger*/}
           <div

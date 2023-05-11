@@ -55,3 +55,7 @@
   background-color: #6d6a6a;
 }
 
+.nav_active.active{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
