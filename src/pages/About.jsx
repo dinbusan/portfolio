@@ -93,7 +93,7 @@ const About = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="text-white w-10 h-10 animate-[bounce_2s_linear_infinite]"
+            className="text-white w-10 h-10 animate-[bounce_1.5s_ease-in-out_infinite]"
           >
             <path
               strokeLinecap="round"
