@@ -4,7 +4,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Main from "./Main";
 import Projects from "../pages/Projects";
-import Skills from "../pages/Skills";
+// import Skills from "../pages/Skills";
 
 import { AnimatePresence } from "framer-motion";
 
