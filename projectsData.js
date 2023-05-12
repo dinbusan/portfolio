@@ -7,7 +7,7 @@ export default {
       {
         id: uuidv4(),
         name: "WeatherWise",
-        desc: " WeatherWise is a responsive and user-friendly full-stack web app that provides real-time weather information using the OpenWeatherMap API with Axios.",
+        desc: " WeatherWise is a responsive and user-friendly full-stack web app that provides real-time weather information.",
         tech: "HTML | CSS | JavaScript | React | Node.js | MongoDB | OpenWeatherMap API",
         img: "/assets/weatherWise.png",
         link: "https://weatherwise-543ec.web.app/",
