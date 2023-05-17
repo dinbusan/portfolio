@@ -29,7 +29,7 @@ const Main = () => {
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="mt-10 flex justify-center xl:absolute xl:mt-36 xl:right-0 xl:mr-40"
+        className="mt-10 flex justify-center xl:absolute xl:mt-36 xl:right-0 xl:mr-32"
       >
         <div className="bg-amber-400 w-60 h-60 md:h-72 md:w-72 xl:h-80 xl:w-80 rounded-full">
           <img
