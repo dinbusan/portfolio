@@ -123,8 +123,8 @@ const Header = () => {
               <li className="w-[160px] h-[60px] pl-3 pr-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-500">
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
-                  href="assets/deann_videtto_cv.docx"
-                  download="deann_videtto_cv.docx"
+                  href="assets/Deann_Videtto_Resume.pdf"
+                  download="Deann_Videtto_Resume.pdf"
                 >
                   Resume <BsFillPersonLinesFill size={30} />
                 </a>
