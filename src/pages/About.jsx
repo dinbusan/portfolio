@@ -11,7 +11,7 @@ const About = () => {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log("use effect hook, inView = ", inView);
+    // console.log("use effect hook, inView = ", inView);
     if (inView) {
       animation.start({
         opacity: 1,
