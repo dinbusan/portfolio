@@ -1,7 +1,3 @@
-# portfolio
-Portfolio webpage created using React.js, TailwindCSS, and JavaScript
-
-
 # Portfolio Website
 
 This is the README file for the "portfolio-site" project, which is a portfolio website. The website showcases my work, skills, and achievements to potential clients, employers, or anyone interested in my professional profile.
