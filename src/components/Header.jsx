@@ -98,7 +98,7 @@ const Header = () => {
             <ul className="">
               <li className="w-[160px] h-[60px] pl-3 pr-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-500">
                 <a
-                  className="flex justify-between items-center w-full text-gray-300"
+                  className="flex justify-between items-center w-full text-gray-100"
                   href="https://www.linkedin.com/in/deann-videtto-8481a166/"
                 >
                   Linkedin <FaLinkedin size={30} />
