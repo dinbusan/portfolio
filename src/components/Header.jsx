@@ -106,7 +106,7 @@ const Header = () => {
               </li>
               <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-indigo-500">
                 <a
-                  className="flex justify-between pr-4 items-center w-full text-gray-300"
+                  className="flex justify-between pr-4 items-center w-full text-gray-100"
                   href="https://www.github.com/dinbusan/"
                 >
                   Github <FaGithub size={30} />
@@ -114,7 +114,7 @@ const Header = () => {
               </li>
               <li className="w-[160px] h-[60px] pl-3 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-rose-500">
                 <a
-                  className="flex justify-between pr-4  items-center w-full text-gray-300"
+                  className="flex justify-between pr-4  items-center w-full text-gray-100"
                   href="mailto:deann.videtto@gmail.com"
                 >
                   Email <HiOutlineMail size={30} />
@@ -122,7 +122,7 @@ const Header = () => {
               </li>
               <li className="w-[160px] h-[60px] pl-3 pr-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-500">
                 <a
-                  className="flex justify-between items-center w-full text-gray-300"
+                  className="flex justify-between items-center w-full text-gray-100"
                   href="assets/Deann_Videtto_Resume.pdf"
                   download="Deann_Videtto_Resume.pdf"
                 >
