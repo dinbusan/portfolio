@@ -23,7 +23,7 @@ export default {
       {
         id: uuidv4(),
         name: "Bakery Website",
-        desc: "A bakery website created for a client in Connecticut, USA",
+        desc: "**IN PROGRESS** <br/> A bakery website created for a client in Connecticut, USA",
         tech: "React | TailwindCSS | FramerMotion | React Form Hook | EmailJS API | Vite",
         img: "./assets/salt_spoon.png",
         link: "https://saltandspoonct.netlify.app/",
