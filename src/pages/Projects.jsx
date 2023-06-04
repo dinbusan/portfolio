@@ -13,7 +13,7 @@ const Projects = () => {
    setLoading(true);
    setTimeout(() => {
      setLoading(false);
-   }, 1000);
+   }, 1300);
  }, []);
 
 
@@ -27,7 +27,7 @@ const Projects = () => {
     >
       {projects.map((project) => (
         <motion.div
-          layout
+          layout="position"
           onClick={() =>
             setOpenProjectId(project.id === openProjectId ? null : project.id)
           }
