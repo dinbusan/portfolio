@@ -21,7 +21,7 @@ const Projects = () => {
           onClick={() =>
             setOpenProjectId(project.id === openProjectId ? null : project.id)
           }
-          className="bg-white mt-5 rounded mx-1 lg:mx-4 lg:w-1/5 w-5/6 h-full py-3 font-mono cursor-pointer"
+          className="bg-white mt-5 lg:mt-20 rounded mx-1 lg:mx-4 lg:w-1/5 w-5/6 h-full py-3 font-mono cursor-pointer"
           transition={{ layout: { duration: 1, type: "spring" } }}
           key={project.id}
         >
