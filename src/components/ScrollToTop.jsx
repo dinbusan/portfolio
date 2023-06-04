@@ -8,14 +8,17 @@ const ScrollToTop = () => {
         })
     }
   return (
-    <button className="scrollToTop-btn z-30 -mt-10" onClick={goToTop}>
+    <button
+      className="scrollToTop-btn z-30  flex mx-auto lg:ml-auto lg:mr-16 -mt-10"
+      onClick={goToTop}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="ml-auto mr-16 bg-amber-400 rounded-full bg-opacity-50 hover:bg-opacity-70 hover:scale-105 z-30 text-white w-10 h-10"
+        className="bg-slate-400 rounded-full bg-opacity-50 hover:bg-opacity-70 hover:scale-105 z-30 text-white w-10 h-10"
       >
         <path
           strokeLinecap="round"
