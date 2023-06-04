@@ -9,12 +9,12 @@ const loaderVariants = {
       x: {
         repeatType: "mirror",
         repeat: Infinity,
-        duration: 0.5,
+        duration: .75,
       },
       y: {
         repeatType: "mirror",
         repeat: Infinity,
-        duration: 0.25,
+        duration: 0.5,
         ease: "easeOut",
       },
     },

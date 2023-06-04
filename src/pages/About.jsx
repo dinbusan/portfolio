@@ -3,6 +3,8 @@ import Skills from "./Skills";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import ScrollToTop from "../components/ScrollToTop";
+import ScrollToBottom from "../components/ScrollToBottom";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -64,7 +66,8 @@ const About = () => {
           interpersonal skills. <br />
           <br />
           Driven by my passion for technology, I transitioned to a career in web
-          development. Since then, I am continually learning new technologies and approaches to development.
+          development. Since then, I am continually learning new technologies
+          and approaches to development.
           <br />
           <br />I have a keen interest in front-end development and creating
           visually appealing and responsive websites. I particularly enjoy
@@ -114,6 +117,7 @@ const About = () => {
         <motion.hr className="w-64 md:w-2/3 h-0.5 my-8 xl:my-0 ml-1 md:ml-5 xl:ml-5 border-0 bg-gray-300"></motion.hr>
       </motion.div>
       <motion.div animate={animation}>{<Skills />}</motion.div>
+      <ScrollToTop />
     </motion.div>
   );
 };
