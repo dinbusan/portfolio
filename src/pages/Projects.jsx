@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import projectsData from "../../projectsData";
+import Loader from "../components/Loader";
 
 const Projects = () => {
   const [openProjectId, setOpenProjectId] = useState(null);
   const projects = projectsData.data.projects;
+ const [loading, setLoading] = useState(false);
+
+ useEffect(() => {
+   setLoading(true);
+   setTimeout(() => {
+     setLoading(false);
+   }, 1000);
+ }, []);
+
 
   return (
     <motion.div
@@ -47,13 +57,19 @@ const Projects = () => {
               Link
             </a>
           </motion.p>
+          {/* <motion.div>
+            <Loader />
+          </motion.div> */}
+          {loading ? (<Loader/> ):(
           <motion.div layout className="max-w-100% h-auto mt-0 mx-auto">
+            
             <img
-              className="md:h-60 mx-auto object-scale-down"
+              className="md:h-60 mx-auto object-contain"
               src={project.img}
               alt=""
             />
           </motion.div>
+          )}
           {project.id !== openProjectId && (
             <p className="text-center hover:scale-105">
               More info <span className="text-xl">&#8594;</span>
