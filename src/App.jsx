@@ -16,10 +16,10 @@ function App() {
   }, []);
 
   return (
-    <div className="relative bg-black h-screen w-screen flex justify-center items-center">
+    <div className="relative bg-slate-950 h-screen w-screen flex justify-center items-center">
       {loading ? (
         <ScaleLoader
-          color="#fbbf24"
+          color="#facc15"
           height={100}
           margin={5}
           radius={50}
