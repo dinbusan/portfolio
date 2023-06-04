@@ -21,12 +21,12 @@ const Projects = () => {
           onClick={() =>
             setOpenProjectId(project.id === openProjectId ? null : project.id)
           }
-          className="bg-white mt-5 rounded mx-1 lg:mx-5 lg:w-1/4 w-5/6 h-full py-3  font-mono cursor-pointer"
+          className="bg-white mt-5 rounded mx-1 lg:mx-4 lg:w-1/5 w-5/6 h-full py-3 font-mono cursor-pointer"
           transition={{ layout: { duration: 1, type: "spring" } }}
           key={project.id}
         >
           <motion.h2
-            className="text-2xl sm:text-3xl text-center"
+            className="text-xl sm:text-3xl text-center"
             layout="position"
           >
             {project.name}
@@ -49,13 +49,13 @@ const Projects = () => {
           </motion.p>
           <motion.div layout className="max-w-100% h-auto mt-0 mx-auto">
             <img
-              className="md:h-72 mx-auto object-scale-down"
+              className="md:h-60 mx-auto object-scale-down"
               src={project.img}
               alt=""
             />
           </motion.div>
           {project.id !== openProjectId && (
-            <p className="mt-1 text-center hover:scale-105">
+            <p className="text-center hover:scale-105">
               More info <span className="text-xl">&#8594;</span>
             </p>
           )}
@@ -64,7 +64,7 @@ const Projects = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="pt-2 leading-7 px-5 "
+              className="px-5 "
             >
               <p>{project.desc}</p>
             </motion.div>
